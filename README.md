@@ -19,7 +19,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: Ark-Corpration/chalice-action@master
+      uses: Ark-Corpration/chalice-deploy@master
       with:
         args: deploy
       env:
@@ -44,7 +44,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: Ark-Corpration/chalice-action@master
+      uses: Ark-Corpration/chalice-deploy@master
       with:
         args: deploy --stage prod
       env:
@@ -70,7 +70,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: Ark-Corpration/chalice-action@master
+      uses: Ark-Corpration/chalice-deploy@master
       with:
         args: deploy
       env:
