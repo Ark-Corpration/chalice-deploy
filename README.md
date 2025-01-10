@@ -23,6 +23,7 @@ jobs:
       with:
         args: deploy
       env:
+        WORKING_DIRECTORY: api
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ap-northeast-1
@@ -47,6 +48,7 @@ jobs:
       with:
         args: deploy --stage prod
       env:
+        WORKING_DIRECTORY: api
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ap-northeast-1
@@ -72,6 +74,7 @@ jobs:
       with:
         args: deploy
       env:
+        WORKING_DIRECTORY: api
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ap-northeast-1
