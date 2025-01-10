@@ -10,7 +10,7 @@ This Github action allows automatated deployment of your AWS Chalice application
 on:
   push:
     branches:
-      - master
+      - main
 name: Deploy master branch to Chalice
 jobs:
   deploy:
@@ -34,7 +34,7 @@ Edit the args if you want to deploy to a different stage.
 on:
   push:
     branches:
-      - master
+      - main
 name: Deploy master branch to Chalice
 jobs:
   deploy:
