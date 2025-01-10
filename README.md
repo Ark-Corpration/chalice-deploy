@@ -19,13 +19,13 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: 5tigerjelly/chalice-action@master
+      uses: Ark-Corpration/chalice-action@master
       with:
         args: deploy
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_DEFAULT_REGION: us-east-1
+        AWS_DEFAULT_REGION: ap-northeast-1
 ```
 
 ## Deploying to other stages
@@ -43,13 +43,13 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: 5tigerjelly/chalice-action@master
+      uses: Ark-Corpration/chalice-action@master
       with:
         args: deploy --stage prod
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_DEFAULT_REGION: us-east-1
+        AWS_DEFAULT_REGION: ap-northeast-1
 ```
 
 ## Deploying from other branch
@@ -68,13 +68,13 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: 5tigerjelly/chalice-action@master
+      uses: Ark-Corpration/chalice-action@master
       with:
         args: deploy
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_DEFAULT_REGION: us-east-1
+        AWS_DEFAULT_REGION: ap-northeast-1
 ```
 
 ## Secrets
